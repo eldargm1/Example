@@ -70,3 +70,10 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# NuGet packages
+packages/
+
+# Visual Studio
+x64/
+.vs/
