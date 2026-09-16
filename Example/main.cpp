@@ -1,7 +1,9 @@
 #include <iostream>
+#include <stdexcept>
+#include "Triangle.h"
 
 int main() {
-    double a, h, S;
+    double a, h;
 
     std::cout << "Программа для расчёта площади треугольника.\n";
     std::cout << "Введите сторону треугольника: ";
@@ -10,9 +12,13 @@ int main() {
     std::cout << "Введите высоту, проведённую к этой стороне: ";
     std::cin >> h;
 
-    S = 0.5 * a * h;
-
-    std::cout << "Площадь треугольника = " << S << std::endl;
+    try {
+        Triangle t(a, h);
+        std::cout << "Площадь треугольника = " << t.area() << std::endl;
+    }
+    catch (const std::exception& e) {
+        std::cout << "Ошибка: " << e.what() << std::endl;
+    }
 
     return 0;
 }
