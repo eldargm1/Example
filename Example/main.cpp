@@ -1,15 +1,18 @@
 #include <iostream>
 
 int main() {
-	double a, h, S;
+    double a, h, S;
 
-	std::cin >> a >> h;
+    std::cout << "Программа для расчёта площади треугольника.\n";
+    std::cout << "Введите сторону треугольника: ";
+    std::cin >> a;
 
-	S = 0.5 * a * h;
+    std::cout << "Введите высоту, проведённую к этой стороне: ";
+    std::cin >> h;
 
-	std::cout << S << std::endl;
+    S = 0.5 * a * h;
 
-	return 0;
+    std::cout << "Площадь треугольника = " << S << std::endl;
+
+    return 0;
 }
-
-// ТК №1 - ветка dev
