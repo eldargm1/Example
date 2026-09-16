@@ -5,4 +5,5 @@
   </Configurations>
   <Project Path="Example/Example.vcxproj" Id="b0014aa4-8d68-42ab-9ead-63271b22feb6" />
   <Project Path="TriangleLib/TriangleLib.vcxproj" Id="db1b4e5a-72f0-49cd-a033-29c8240615d7" />
+  <Project Path="TriangleTests/TriangleTests.vcxproj" Id="49fffcae-6767-4e2e-9781-e99043b5d5c5" />
 </Solution>
