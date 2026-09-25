@@ -8,10 +8,10 @@ private:
 public:
     Triangle(double side, double height);
 
-    double getSide() const;
-    double getHeight() const;
+    double getSide() const noexcept;
+    double getHeight() const noexcept;
     void setSide(double side);
     void setHeight(double height);
 
-    double area() const;
+    double area() const noexcept;
 };
