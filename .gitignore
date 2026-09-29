@@ -1,6 +1,3 @@
-x64
-.vs
-
 # Prerequisites
 *.d
 
@@ -25,7 +22,6 @@ x64
 *.dylib
 *.dll
 *.so.*
-
 
 # Fortran module files
 *.mod
@@ -71,9 +67,10 @@ vcpkg_installed/
 Testing/
 .cache/
 
-# NuGet packages
-packages/
-
 # Visual Studio
 x64/
 .vs/
+*.user
+
+# NuGet packages
+packages/
