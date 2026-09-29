@@ -4,12 +4,12 @@
 
 TEST(TriangleTest, AreaCalculation) {
     Triangle t(10.0, 5.0);
-    EXPECT_DOUBLE_EQ(t.area(), 25.0);
+    EXPECT_DOUBLE_EQ(t.calculateArea(), 25.0);
 }
 
 TEST(TriangleTest, AreaWithFraction) {
     Triangle t(2.5, 4.0);
-    EXPECT_DOUBLE_EQ(t.area(), 5.0);
+    EXPECT_DOUBLE_EQ(t.calculateArea(), 5.0);
 }
 
 TEST(TriangleTest, GettersReturnCorrectValues) {
@@ -24,7 +24,7 @@ TEST(TriangleTest, SettersChangeValues) {
     t.setHeight(10.0);
     EXPECT_DOUBLE_EQ(t.getSide(), 20.0);
     EXPECT_DOUBLE_EQ(t.getHeight(), 10.0);
-    EXPECT_DOUBLE_EQ(t.area(), 100.0);
+    EXPECT_DOUBLE_EQ(t.calculateArea(), 100.0);
 }
 
 TEST(TriangleTest, NegativeSideThrows) {

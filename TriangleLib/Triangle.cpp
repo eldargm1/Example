@@ -23,6 +23,6 @@ void Triangle::setHeight(double height) {
     this->height = height;
 }
 
-double Triangle::area() const noexcept {
+double Triangle::calculateArea() const noexcept {
     return 0.5 * side * height;
 }

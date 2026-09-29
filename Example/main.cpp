@@ -20,7 +20,7 @@ int main() {
 
     try {
         Triangle triangle(side, height);
-        std::cout << "Area = " << triangle.area() << std::endl;
+        std::cout << "Area = " << triangle.calculateArea() << std::endl;
     }
     catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;

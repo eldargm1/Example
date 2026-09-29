@@ -13,5 +13,5 @@ public:
     void setSide(double side);
     void setHeight(double height);
 
-    double area() const noexcept;
+    double calculateArea() const noexcept;
 };
